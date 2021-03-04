@@ -1,0 +1,21 @@
+def printIntersection(arr1, arr2, n1, n2):
+    hs = set()
+ 
+   
+    for i in range(0, n1):
+        hs.add(arr1[i])
+    print("Intersection:")
+    for i in range(0, n2):
+ 
+       
+        if arr2[i] in hs:
+            print(arr2[i], end=" ")
+ 
+ 
+
+arr1 = [1,2,2,1]
+arr2 = [2,2]
+n1 = len(arr1)
+n2 = len(arr2)
+ 
+printIntersection(arr1, arr2, n1, n2)
